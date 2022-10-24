@@ -14,7 +14,7 @@ int main(){
         cout << "Error 100, file could be opened." << endl; 
         return 1;
     }
-    strm << asctime(localtime(&currentTime)) << endl;
+    strm << asctime(localtime(&currentTime)) << endl; //Write current time into the file
     strm.close();
     if(strm.is_open()){
         cout << "Error 101, file could not be opened." << endl;
